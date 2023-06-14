@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/v1/orders", orderRouter);
 app.use("/v1/products", productRouter);
 
-const port = 3000;
+const port = 8080;
 
 const start = async () => {
   try {

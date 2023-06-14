@@ -6,7 +6,7 @@ const searchProduct = async (req, res) => {
 
   try {
     const products = await Product.find({
-      name: { $regex: name, $options: "i" },
+      name: { $regex: name },
     });
 
     return res.json(products);

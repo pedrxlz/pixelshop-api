@@ -9,6 +9,6 @@ const {
 
 router.get("/:id", getProduct);
 router.get("/", getProducts);
-router.put("/", searchProduct);
+router.get("/", searchProduct);
 
 module.exports = router;
